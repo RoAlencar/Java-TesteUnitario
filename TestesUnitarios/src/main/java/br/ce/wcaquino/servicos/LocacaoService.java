@@ -38,7 +38,7 @@ public class LocacaoService {
 		//cenario
 		LocacaoService service = new LocacaoService();
 		Usuario usuario = new Usuario("User1");
-		Filme filme = new Filme("Filme1",2,4.0);
+		Filme filme = new Filme("Filme1",2,5.0);
 
 		//ação
 		Locacao locacao = service.alugarFilme(usuario,filme);
