@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario bugfix:Junit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
+    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat: Organização dos arquivos de teste">
+      <change afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/AssertTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/entidades/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/entidades/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/entidades/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/entidades/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +50,23 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.LocacaoServiceTest.teste">
+    <configuration name="AssertTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestesUnitarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.AssertTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LocacaoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestesUnitarios" />
       <extension name="coverage">
@@ -65,8 +82,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LocacaoServiceTest.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestesUnitarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
+      <option name="METHOD_NAME" value="teste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LocacaoServiceTest.teste" />
+        <item itemvalue="JUnit.AssertTest.test" />
         <item itemvalue="JUnit.LocacaoServiceTest" />
       </list>
     </recent_temporary>
@@ -79,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632739054251</updated>
-      <workItem from="1632739056338" duration="5270000" />
+      <workItem from="1632739056338" duration="7750000" />
     </task>
     <task id="LOCAL-00001" summary="Convertendo projeto Eclipse para o Intellij &amp; Testando sem ferramenta">
       <created>1632740030607</created>
@@ -102,7 +137,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632742056484</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="TesteUnitario feat: Organização dos arquivos de teste">
+      <created>1632745129636</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1632745129636</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +165,7 @@
     <MESSAGE value="Convertendo projeto Eclipse para o Intellij &amp; Testando sem ferramenta" />
     <MESSAGE value="TesteUnitario feat:Junit" />
     <MESSAGE value="TesteUnitario bugfix:Junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario bugfix:Junit" />
+    <MESSAGE value="TesteUnitario feat: Organização dos arquivos de teste" />
+    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat: Organização dos arquivos de teste" />
   </component>
 </project>

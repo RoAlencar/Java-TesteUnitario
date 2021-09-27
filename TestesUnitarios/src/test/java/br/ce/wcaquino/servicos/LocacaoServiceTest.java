@@ -8,7 +8,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.Date;
-
 public class LocacaoServiceTest {
 
     @Test
@@ -21,7 +20,7 @@ public class LocacaoServiceTest {
         //ação
         Locacao locacao = service.alugarFilme(usuario,filme);
         //verificação
-        Assertions.assertTrue(locacao.getValor() == 5.0);
+        Assertions.assertEquals(5.0, locacao.getValor(),0.01);
         Assertions.assertTrue(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()));
         Assertions.assertTrue(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)));
     }
