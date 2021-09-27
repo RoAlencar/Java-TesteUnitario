@@ -7,7 +7,12 @@ import br.ce.wcaquino.utils.DataUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+
 import java.util.Date;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
 public class LocacaoServiceTest {
 
     @Test
@@ -20,8 +25,15 @@ public class LocacaoServiceTest {
         //ação
         Locacao locacao = service.alugarFilme(usuario,filme);
         //verificação
-        Assertions.assertEquals(5.0, locacao.getValor(),0.01);
-        Assertions.assertTrue(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()));
-        Assertions.assertTrue(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)));
+
+        /**
+         * Usar o assertAll para que o teste não pare no primeiro erro.
+         * assim, ele mostra todos os erros das 3 classes
+         */
+        Assertions.assertAll("teste",
+                () -> assertEquals(5.0, locacao.getValor(), 0.01),
+                () -> assertTrue(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date())),
+                () -> assertTrue(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)))
+        );
     }
 }

@@ -4,12 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat: Organização dos arquivos de teste">
-      <change afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/AssertTest.java" afterDir="false" />
+    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat:Assertivas">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/entidades/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/entidades/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/TestesUnitarios.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/TestesUnitarios.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/AssertTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/AssertTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/entidades/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/entidades/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/AssertTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/AssertTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632739054251</updated>
-      <workItem from="1632739056338" duration="7750000" />
+      <workItem from="1632739056338" duration="14232000" />
     </task>
     <task id="LOCAL-00001" summary="Convertendo projeto Eclipse para o Intellij &amp; Testando sem ferramenta">
       <created>1632740030607</created>
@@ -144,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632745129636</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TesteUnitario feat:Assertivas">
+      <created>1632747587576</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1632747587576</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +176,7 @@
     <MESSAGE value="TesteUnitario feat:Junit" />
     <MESSAGE value="TesteUnitario bugfix:Junit" />
     <MESSAGE value="TesteUnitario feat: Organização dos arquivos de teste" />
-    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat: Organização dos arquivos de teste" />
+    <MESSAGE value="TesteUnitario feat:Assertivas" />
+    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat:Assertivas" />
   </component>
 </project>
