@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat:Junit" />
+    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario bugfix:Junit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,13 +39,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.LocacaoService.teste">
-    <configuration name="LocacaoService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoService" />
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.ce.wcaquino.servicos" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="LocacaoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestesUnitarios" />
       <extension name="coverage">
         <pattern>
@@ -40,45 +58,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Junity - Teste 1" type="JUnit" factoryName="JUnit">
-      <module name="TestesUnitarios" />
       <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
-      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoService" />
-      <option name="METHOD_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocacaoService.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestesUnitarios" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
-      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoService" />
-      <option name="METHOD_NAME" value="teste" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.LocacaoService" />
-      <item itemvalue="JUnit.Junity - Teste 1" />
-      <item itemvalue="JUnit.LocacaoService.teste" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LocacaoService.teste" />
-        <item itemvalue="Application.LocacaoService" />
+        <item itemvalue="JUnit.LocacaoServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -90,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1632739054251</updated>
-      <workItem from="1632739056338" duration="2909000" />
+      <workItem from="1632739056338" duration="5270000" />
     </task>
     <task id="LOCAL-00001" summary="Convertendo projeto Eclipse para o Intellij &amp; Testando sem ferramenta">
       <created>1632740030607</created>
@@ -106,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632741973587</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="TesteUnitario bugfix:Junit">
+      <created>1632742056484</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632742056484</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Convertendo projeto Eclipse para o Intellij &amp; Testando sem ferramenta" />
     <MESSAGE value="TesteUnitario feat:Junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat:Junit" />
+    <MESSAGE value="TesteUnitario bugfix:Junit" />
+    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario bugfix:Junit" />
   </component>
 </project>

@@ -7,44 +7,26 @@ import java.util.Date;
 import br.ce.wcaquino.entidades.Filme;
 import br.ce.wcaquino.entidades.Locacao;
 import br.ce.wcaquino.entidades.Usuario;
-import br.ce.wcaquino.utils.DataUtils;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.AssertionsKt;
-import org.junit.jupiter.api.Test;
 
 
 public class LocacaoService {
-	
-	public Locacao alugarFilme(Usuario usuario, Filme filme) {
-		Locacao locacao = new Locacao();
-		locacao.setFilme(filme);
-		locacao.setUsuario(usuario);
-		locacao.setDataLocacao(new Date());
-		locacao.setValor(filme.getPrecoLocacao());
 
-		//Entrega no dia seguinte
-		Date dataEntrega = new Date();
-		dataEntrega = adicionarDias(dataEntrega, 1);
-		locacao.setDataRetorno(dataEntrega);
-		
-		//Salvando a locacao...	
-		//TODO adicionar método para salvar
-		
-		return locacao;
-	}
+    public Locacao alugarFilme(Usuario usuario, Filme filme) {
+        Locacao locacao = new Locacao();
+        locacao.setFilme(filme);
+        locacao.setUsuario(usuario);
+        locacao.setDataLocacao(new Date());
+        locacao.setValor(filme.getPrecoLocacao());
 
-	@Test
-	public void teste() {
-		//cenario
-		LocacaoService service = new LocacaoService();
-		Usuario usuario = new Usuario("User1");
-		Filme filme = new Filme("Filme1",2,5.0);
+        //Entrega no dia seguinte
+        Date dataEntrega = new Date();
+        dataEntrega = adicionarDias(dataEntrega, 1);
+        locacao.setDataRetorno(dataEntrega);
 
-		//ação
-		Locacao locacao = service.alugarFilme(usuario,filme);
-		//verificação
-		Assertions.assertTrue(locacao.getValor() == 5.0);
-		Assertions.assertTrue(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()));
-		Assertions.assertTrue(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)));
-	}
+        //Salvando a locacao...
+        ///TODO adicionar método para salvar
+
+        return locacao;
+    }
+
 }
