@@ -9,6 +9,7 @@ import br.ce.wcaquino.utils.DataUtils;
 import org.junit.jupiter.api.*;
 
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -24,6 +25,10 @@ public class LocacaoServiceTest {
         service = new LocacaoService();
     }
 
+    /**
+     * Com a nova exceção para que se o aluguel for feito no sabado, voce devolver com 2 dias de diferença, o metodo quebra.
+     * @throws Exception
+     */
     @Test
     public void Teste() throws Exception {
         //cenario
@@ -157,6 +162,25 @@ public class LocacaoServiceTest {
         //verificacao
         //4+4+3+2+1+0=14
         Assertions.assertEquals(14.0,resultado.getValor());
+    }
+
+    /**
+     * exceção funciona apenas no sabado (utiliza a data atual da maquina)
+     * @throws FilmeSemEstoqueException
+     * @throws LocadoraException
+     */
+    @Test
+    public void deveDevolverNaSegundaAoAlugarNoSabado() throws FilmeSemEstoqueException, LocadoraException {
+        //Cenario
+        Usuario usuario = new Usuario("Usuario");
+        List<Filme> filmes = Arrays.asList(new Filme("Filme1",1,5.0));
+
+        //Ação
+        Locacao retorno = service.alugarFilme(usuario,filmes);
+
+        //Verificação
+        boolean ehSegunda = DataUtils.verificarDiaSemana(retorno.getDataRetorno(), Calendar.MONDAY);
+        Assertions.assertTrue(ehSegunda);
     }
 }
 

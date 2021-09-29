@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat: Introdução ao TDD">
+    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat: Refatorando LocacaoServiceTest com TDD">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
@@ -70,6 +70,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LocacaoServiceTest.Teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestesUnitarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
+      <option name="METHOD_NAME" value="Teste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LocacaoServiceTest.deveDevolverNaSegundaAoAlugarNoSabado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestesUnitarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
+      <option name="METHOD_NAME" value="deveDevolverNaSegundaAoAlugarNoSabado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LocacaoServiceTest.devePagar0PctNoFilme6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestesUnitarios" />
       <extension name="coverage">
@@ -102,45 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocacaoServiceTest.devePagar50PctNoFilme4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestesUnitarios" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
-      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
-      <option name="METHOD_NAME" value="devePagar50PctNoFilme4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocacaoServiceTest.devePagar75PctNoFilme3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestesUnitarios" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
-      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
-      <option name="METHOD_NAME" value="devePagar75PctNoFilme3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LocacaoServiceTest" />
+        <item itemvalue="JUnit.LocacaoServiceTest.Teste" />
+        <item itemvalue="JUnit.LocacaoServiceTest.deveDevolverNaSegundaAoAlugarNoSabado" />
         <item itemvalue="JUnit.LocacaoServiceTest.devePagar0PctNoFilme6" />
         <item itemvalue="JUnit.LocacaoServiceTest.devePagar25PctNoFilme5" />
-        <item itemvalue="JUnit.LocacaoServiceTest.devePagar50PctNoFilme4" />
-        <item itemvalue="JUnit.LocacaoServiceTest.devePagar75PctNoFilme3" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +154,7 @@
       <updated>1632739054251</updated>
       <workItem from="1632739056338" duration="20426000" />
       <workItem from="1632827612063" duration="11433000" />
-      <workItem from="1632915026570" duration="15069000" />
+      <workItem from="1632915026570" duration="15653000" />
     </task>
     <task id="LOCAL-00001" summary="Convertendo projeto Eclipse para o Intellij &amp; Testando sem ferramenta">
       <created>1632740030607</created>
@@ -233,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632937225363</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="TesteUnitario feat: Refatorando LocacaoServiceTest com TDD">
+      <created>1632944073360</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1632944073360</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,19 +271,20 @@
     <MESSAGE value="TesteUnitario feat: Ordem de execução dos testes (Caso necessite do resultado de um teste para definir um outro)" />
     <MESSAGE value="TesteUnitario feat:Desafio - List" />
     <MESSAGE value="TesteUnitario feat: Introdução ao TDD" />
-    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat: Introdução ao TDD" />
+    <MESSAGE value="TesteUnitario feat: Refatorando LocacaoServiceTest com TDD" />
+    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat: Refatorando LocacaoServiceTest com TDD" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java</url>
-          <line>64</line>
+          <line>65</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java</url>
-          <line>56</line>
+          <line>57</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
