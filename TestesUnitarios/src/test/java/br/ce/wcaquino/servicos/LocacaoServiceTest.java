@@ -6,8 +6,7 @@ import br.ce.wcaquino.entidades.Usuario;
 import br.ce.wcaquino.exceptions.FilmeSemEstoqueException;
 import br.ce.wcaquino.exceptions.LocadoraException;
 import br.ce.wcaquino.utils.DataUtils;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import java.util.Date;
 
@@ -15,13 +14,46 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class LocacaoServiceTest {
 
+    private LocacaoService service;
+
+    //definição do contador
+    private static Integer contador = 0;
+    @BeforeEach
+    public void setup() {
+        System.out.println("Before");
+        service = new LocacaoService();
+        //incremento
+         contador++;
+        //impressão do contador
+        System.out.println(contador);
+    }
+
+    @AfterEach
+    public void tearDown() {
+        System.out.println("After");
+    }
+
+    /**
+     * AfterEach e BeforeEach (JUnit5) = After e Before(JUnit4)
+     * AfterAll e BeforeAll (JUnit5) = AfterClass e BeforeClass(JUnit4) -> Antes da classe ser intanciada e depois dela ser destruida, logo é necessario colocar como static
+     */
+    @BeforeAll
+    public static void setupClass() {
+        System.out.println("BeforeAll");
+    }
+
+    @AfterAll
+    public static void tearDownClass() {
+        System.out.println("AfterAll");
+    }
+
     @Test
     public void teste() throws Exception {
         //cenario
-        LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("User1");
         Filme filme = new Filme("Filme1", 2, 5.0);
 
+        System.out.println("Teste");
         //ação
         Locacao locacao;
 
@@ -44,7 +76,6 @@ public class LocacaoServiceTest {
     @Test
     public void testLocacao_filmeSemEstoque() throws Exception {
         //cenario
-        LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("User1");
         Filme filme = new Filme("Filme1", 2, 5.0);
 
@@ -56,7 +87,6 @@ public class LocacaoServiceTest {
     @Test
     public void testLocacao_filmeSemEstoque2() {
         //cenario
-        LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("User1");
         Filme filme = new Filme("Filme1", 0, 5.0);
 
@@ -72,7 +102,6 @@ public class LocacaoServiceTest {
     @Test
     public void testLocacao_usuarioVazio() throws FilmeSemEstoqueException {
         //cenario
-        LocacaoService service = new LocacaoService();
         Filme filme = new Filme("Filme3", 1, 4.0);
 
         //Ação
@@ -88,14 +117,13 @@ public class LocacaoServiceTest {
     @Test
     public void testLocacao_Filmevazio() throws FilmeSemEstoqueException {
         //Cenario
-        LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Usuario 1");
         //Ação
         try {
             service.alugarFilme(usuario, null);
             Assertions.fail();
         } catch (LocadoraException e) {
-            Assertions.assertEquals(e.getMessage(),"Filme vazio");
+            Assertions.assertEquals(e.getMessage(), "Filme vazio");
         }
     }
 

@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat: Forma de dividir um teste (JUnit 5)">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/exceptions/FilmeSemEstoqueException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/exceptions/LocadoraException.java" afterDir="false" />
+    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat: Tratamento de exceções">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/classes/br/ce/wcaquino/servicos/LocacaoService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,22 +80,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocacaoServiceTest.testLocacao_filmeSemEstoque" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="TestesUnitarios" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
-      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
-      <option name="METHOD_NAME" value="testLocacao_filmeSemEstoque" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LocacaoServiceTest.testLocacao_filmeSemEstoque2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestesUnitarios" />
       <extension name="coverage">
@@ -133,13 +112,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LocacaoServiceTest.teste" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestesUnitarios" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.ce.wcaquino.servicos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.ce.wcaquino.servicos" />
+      <option name="MAIN_CLASS_NAME" value="br.ce.wcaquino.servicos.LocacaoServiceTest" />
+      <option name="METHOD_NAME" value="teste" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.LocacaoServiceTest" />
-        <item itemvalue="JUnit.LocacaoServiceTest.testLocacao_filmeSemEstoque2" />
+        <item itemvalue="JUnit.LocacaoServiceTest.teste" />
         <item itemvalue="JUnit.LocacaoServiceTest.testLocacao_Filmevazio" />
+        <item itemvalue="JUnit.LocacaoServiceTest.testLocacao_filmeSemEstoque2" />
         <item itemvalue="JUnit.LocacaoServiceTest.testLocacao_usuarioVazio" />
-        <item itemvalue="JUnit.LocacaoServiceTest.testLocacao_filmeSemEstoque" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +148,7 @@
       <updated>1632739054251</updated>
       <workItem from="1632739056338" duration="20426000" />
       <workItem from="1632827612063" duration="11433000" />
-      <workItem from="1632915026570" duration="1605000" />
+      <workItem from="1632915026570" duration="3683000" />
     </task>
     <task id="LOCAL-00001" summary="Convertendo projeto Eclipse para o Intellij &amp; Testando sem ferramenta">
       <created>1632740030607</created>
@@ -197,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632757444154</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="TesteUnitario feat: Tratamento de exceções">
+      <created>1632916909404</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1632916909404</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,15 +224,22 @@
     <MESSAGE value="TesteUnitario feat: Organização dos arquivos de teste" />
     <MESSAGE value="TesteUnitario feat:Assertivas" />
     <MESSAGE value="TesteUnitario feat: Forma de dividir um teste (JUnit 5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat: Forma de dividir um teste (JUnit 5)" />
+    <MESSAGE value="TesteUnitario feat: Tratamento de excecoes" />
+    <MESSAGE value="TesteUnitario feat: Tratamento de exceções" />
+    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat: Tratamento de exceções" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java</url>
-          <line>64</line>
+          <line>94</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
