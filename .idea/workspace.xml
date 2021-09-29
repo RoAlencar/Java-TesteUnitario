@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat : Introdução ao After e Before (com anotações para Junit4 e 5)">
-      <change afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/OrdemTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2aee7114-b070-46ca-b00a-f94a82b8909c" name="Changes" comment="TesteUnitario feat: Ordem de execução dos testes (Caso necessite do resultado de um teste para definir um outro)">
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/entidades/Locacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/entidades/Locacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/main/java/br/ce/wcaquino/servicos/LocacaoService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestesUnitarios/target/test-classes/br/ce/wcaquino/servicos/LocacaoServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +48,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.OrdemTest">
+  <component name="RunManager" selected="JUnit.LocacaoServiceTest">
     <configuration name="LocacaoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TestesUnitarios" />
       <extension name="coverage">
@@ -130,9 +129,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LocacaoServiceTest" />
         <item itemvalue="JUnit.OrdemTest" />
         <item itemvalue="JUnit.OrdemTest.testEmOrder" />
-        <item itemvalue="JUnit.LocacaoServiceTest" />
         <item itemvalue="JUnit.LocacaoServiceTest.teste" />
         <item itemvalue="JUnit.LocacaoServiceTest.testLocacao_Filmevazio" />
       </list>
@@ -148,7 +147,7 @@
       <updated>1632739054251</updated>
       <workItem from="1632739056338" duration="20426000" />
       <workItem from="1632827612063" duration="11433000" />
-      <workItem from="1632915026570" duration="7931000" />
+      <workItem from="1632915026570" duration="9673000" />
     </task>
     <task id="LOCAL-00001" summary="Convertendo projeto Eclipse para o Intellij &amp; Testando sem ferramenta">
       <created>1632740030607</created>
@@ -206,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632924701363</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="TesteUnitario feat: Ordem de execução dos testes (Caso necessite do resultado de um teste para definir um outro)">
+      <created>1632929086944</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1632929086944</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,14 +240,15 @@
     <MESSAGE value="TesteUnitario feat: Tratamento de excecoes" />
     <MESSAGE value="TesteUnitario feat: Tratamento de exceções" />
     <MESSAGE value="TesteUnitario feat : Introdução ao After e Before (com anotações para Junit4 e 5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat : Introdução ao After e Before (com anotações para Junit4 e 5)" />
+    <MESSAGE value="TesteUnitario feat: Ordem de execução dos testes (Caso necessite do resultado de um teste para definir um outro)" />
+    <option name="LAST_COMMIT_MESSAGE" value="TesteUnitario feat: Ordem de execução dos testes (Caso necessite do resultado de um teste para definir um outro)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/TestesUnitarios/src/test/java/br/ce/wcaquino/servicos/LocacaoServiceTest.java</url>
-          <line>61</line>
+          <line>63</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

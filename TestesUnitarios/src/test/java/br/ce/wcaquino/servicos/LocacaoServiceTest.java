@@ -8,10 +8,13 @@ import br.ce.wcaquino.exceptions.LocadoraException;
 import br.ce.wcaquino.utils.DataUtils;
 import org.junit.jupiter.api.*;
 
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@TestMethodOrder(MethodOrderer.MethodName.class)
 public class LocacaoServiceTest {
 
     private LocacaoService service;
@@ -25,7 +28,7 @@ public class LocacaoServiceTest {
     public void teste() throws Exception {
         //cenario
         Usuario usuario = new Usuario("User1");
-        Filme filme = new Filme("Filme1", 2, 5.0);
+        List<Filme> filme = Arrays.asList(new Filme("Filme1", 2, 5.0));
         //ação
         Locacao locacao;
         locacao = service.alugarFilme(usuario, filme);
@@ -46,7 +49,7 @@ public class LocacaoServiceTest {
     public void testLocacao_filmeSemEstoque() throws Exception {
         //cenario
         Usuario usuario = new Usuario("User1");
-        Filme filme = new Filme("Filme1", 2, 5.0);
+        List<Filme> filme = Arrays.asList(new Filme("Filme1", 2, 5.0));
         //ação
         service.alugarFilme(usuario, filme);
     }
@@ -55,7 +58,7 @@ public class LocacaoServiceTest {
     public void testLocacao_filmeSemEstoque2() {
         //cenario
         Usuario usuario = new Usuario("User1");
-        Filme filme = new Filme("Filme1", 0, 5.0);
+        List<Filme> filme = Arrays.asList(new Filme("Filme1", 0, 5.0));
 
         //ação
         try {
@@ -69,7 +72,7 @@ public class LocacaoServiceTest {
     @Test
     public void testLocacao_usuarioVazio() throws FilmeSemEstoqueException {
         //cenario
-        Filme filme = new Filme("Filme3", 1, 4.0);
+        List<Filme> filme = Arrays.asList(new Filme("Filme1", 2, 5.0));
 
         //Ação
         try {
