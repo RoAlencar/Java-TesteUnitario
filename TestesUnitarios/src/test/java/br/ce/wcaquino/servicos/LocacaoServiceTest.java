@@ -16,35 +16,9 @@ public class LocacaoServiceTest {
 
     private LocacaoService service;
 
-    //definição do contador
-    private static Integer contador = 0;
     @BeforeEach
     public void setup() {
-        System.out.println("Before");
         service = new LocacaoService();
-        //incremento
-         contador++;
-        //impressão do contador
-        System.out.println(contador);
-    }
-
-    @AfterEach
-    public void tearDown() {
-        System.out.println("After");
-    }
-
-    /**
-     * AfterEach e BeforeEach (JUnit5) = After e Before(JUnit4)
-     * AfterAll e BeforeAll (JUnit5) = AfterClass e BeforeClass(JUnit4) -> Antes da classe ser intanciada e depois dela ser destruida, logo é necessario colocar como static
-     */
-    @BeforeAll
-    public static void setupClass() {
-        System.out.println("BeforeAll");
-    }
-
-    @AfterAll
-    public static void tearDownClass() {
-        System.out.println("AfterAll");
     }
 
     @Test
@@ -52,15 +26,10 @@ public class LocacaoServiceTest {
         //cenario
         Usuario usuario = new Usuario("User1");
         Filme filme = new Filme("Filme1", 2, 5.0);
-
-        System.out.println("Teste");
         //ação
         Locacao locacao;
-
         locacao = service.alugarFilme(usuario, filme);
-
         //verificação
-
         /**
          * Usar o assertAll para que o teste não pare no primeiro erro.
          * assim, ele mostra todos os erros das 3 classes
@@ -78,10 +47,8 @@ public class LocacaoServiceTest {
         //cenario
         Usuario usuario = new Usuario("User1");
         Filme filme = new Filme("Filme1", 2, 5.0);
-
         //ação
         service.alugarFilme(usuario, filme);
-
     }
 
     @Test
